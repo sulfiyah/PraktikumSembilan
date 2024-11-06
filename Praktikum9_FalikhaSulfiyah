@@ -1,0 +1,15 @@
+Mahasiswa ={
+    "Nama": "Falikha Sulfiyah",
+    "Kelas": "Rombel 2",
+    "TTL": "Busan, 1 September 1999",
+    "No HP": "08xxxxxxxxxx",
+    "Alamat": "Secang",
+    "Hobi": ["Fangirling", "scroll tiktok", "lando biased"]
+}
+for key, value in Mahasiswa.items():
+    if isinstance(value, list):
+        print(f"{key}:")
+        for index, Hobi in enumerate(value, start=1):
+          print(f" {index}. {Hobi}")
+    else:
+        print(f"{key}: {value}")
